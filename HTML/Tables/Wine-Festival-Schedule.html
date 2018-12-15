@@ -1,0 +1,87 @@
+<!--
+*	The <table> element creates a table.
+*	The <tr> element adds rows to a table.
+*	The <td> element adds data to an element.
+*	Table headings clarify the meaning of data. Headings are added with the <th> element.
+*	Table data can span columns using the colpan attribute.
+*	Table data can span rows using the rowspan attribute.
+*	A table's head is created with the <thead> element.
+*	A table's body is created with the <tbody> element.
+*	A table's footer is created with the <tfoot> element.
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Aguillar Family Wine Festival</title>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+			<h1>Annual Aguillar Family Wine Festival</h1>
+		</header>
+
+	<div class="container">
+		<!--The <table> element will contain all of the tabular data displayed-->
+		<table>
+			<!--The table headings are contained inside of the <thead> element.-->
+			<thead>
+				<tr>
+					<!--Creates a cell that will span two columns-->
+					<th colspan="2">
+						<h1>Wine Festival Schedule</h1>
+					</th>
+				</tr>
+				<tr>
+					<th><!--Column 1-->
+						<h2>Time</h2>
+					</th>
+					<th><!--Column 2-->
+						<h2>Event</h2>
+					</th>
+				</tr>
+			</thead>
+			<!--The <tbody> element seperates the body of the table from its headers and footers-->
+			<tbody>
+				<!--The <tr> element adds/creates new rowns in the table.-->
+				<tr>
+					<!--the tag <td></td> adds data to a table.-->
+					<td class="left">
+						<h3>12:00PM</h3>
+					</td>
+					<td>Welcome Reception</td>
+				</tr>
+				<tr>
+					<td class="left">
+						<h3>01:00PM</h3>
+					</td>
+					<td>Storytelling & Tasting</td>
+				</tr>
+				<tr>
+					<td class="left">
+						<h3>02:00PM</h3>
+					</td>
+					<td>Wine Luncheon</td>
+				</tr>
+				<tr>
+					<td class="left">
+						<h3>03:00PM</h3>
+					</td>
+					<td>Aguillar Family Wines</td>
+				</tr>
+				<tr>
+					<td class="left">
+						<h3>04:00PM</h3>
+					</td>
+					<td>Wine & Cheese Tasting</td>
+				</tr>
+			</tbody>
+		</table>
+		<!--The tags <tfoot></tfoot> are used to separate the footer of the table from its body-->	
+	</div>
+
+	</body>
+</html>
