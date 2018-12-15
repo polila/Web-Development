@@ -1,0 +1,51 @@
+<!--
+*	CSS can change the look of HTML elements. In order to do this, CSS must select HTML elements, then apply styles to them.
+*	CSS can select HTML elements by tag, class, or ID.
+*	Multiple CSS classes can be applied to one HTML element.
+*	Classes can be reusable, while IDs can only be used once.
+*	IDs are more specific than classes, and classes are more specific than tags. That means IDs will override any styles from a class, and classes will override any styles from a tag selector.
+*	Multiple selectors can be chained together to select an element. This raises the specificity, but can be necessary.
+*	Nested elements can be selected by separating selectors with a space.
+*	The !important flag will override any style, however it should almost never be used, as it is extremely difficult to override.
+*	Multiple unrelated selectors can receive the same styles by separating the selector names with commas.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Quinoa and Kale Salad Recipe
+	</title>
+	<link href="./style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/salad.jpg"/>
+
+	<h1>Kale Caeser Quinoa Salad with Roasted Chicken</h1>
+
+	<p class="description">Kale and quinoa provide a healthy base for roasted chicken topped with a light Caesar sauce.</p>
+
+	<p id="cook-time">Total time: 45 minutes</p>
+		<h2>Ingredients</h2>
+		<ul class="ingredients">
+			<li>1/4 cup kale</li>
+			<li>1 cup Quinoa</li>
+			<li>2 tbsp Olive Oil</li>
+			<li>1 chicken breast</li>
+			<li>Caesar Dressing</li>
+		</ul>
+		<h2>Preparation</h2>
+		<ol>
+			<li><p>
+				Prepare quinoa and roast chicken until golden brown and 165 in middle.
+			</p><p class="time">Time: 40 minutes</p></li>
+			<li><p>
+				Toss quinoa, chicken, kale, and Caesar dressing until coated.
+			</p><p class="time">Time: 4 minutes</p></li>
+			<li><p>
+				Add walnuts and olive oil as garnish.
+			</p><p class="time">Time: 1 minute</p></li>
+		</ol>
+		<p class="citation">Find this recipe and more <a href="http://www.myrecipes.com/recipe/kale-caesar-salad-chicken" target="_blank" class="external-link">here</a></p>
+</body>
+</html>
