@@ -1,0 +1,71 @@
+<!--
+*	The position property allows you to specify the position of an element in three different ways.
+*	When set to relative, an element's position is relative to its default position on the page.
+*	When set to absolute, an element's position is relative to its closest positioned parent element. It can be pinned to any part of the web page, but the element will still move with the rest of the document when the page is scrolled.
+*	When set to fixed, an element's position can be pinned to any part of the web page. The element will remain in view no matter what.
+*	The z-index of an element specifies how far back or how far forward an element appears on the page when it overlaps other elements.
+*	The display property allows you control how an element flows vertically and horizontally a document.
+*	inline elements take up as little space as possible, and they cannot have manually-adjusted width or height.
+*	block elements take up the width of their container and can have manually-adjusted heights.
+*	inline-block elements can have set width and height, but they can also appear next to each other and do not take up their entire container width.
+*	The float property can move elements as far left or as far right as possible on a web page.
+*	The clear property can clear an element's left or right side (or both).
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Broadway Design</title>
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400, 600">
+		<link rel="stylesheet" type="text/css" href="./style.css">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li>About</li>
+					<li>Work</li>
+					<li>Team</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="jumbotron">
+				<div class="container">
+					<h1>We Are Broadway</h1>
+					<a href="#" class="btn-main">Get Started</a>
+				</div>
+			</div>
+		</main>
+		<section class="supporting">
+			<div class="container">
+				<div class="col">
+					<img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/design.svg" />
+					<h2>Design</h2>
+					<p>Make your projects look great and interact beautifully.</p>
+					<a href="#">Learn More</a>
+					<br />
+				</div>
+				<div class="col">
+					<img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/develop.svg" />
+					<h2>Develop</h2>
+					<p>Use modern tools to turn your design into a web site</p>
+					<a href="#">Learn More</a>
+					<br />
+				</div>
+				<div class="col">
+					<img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/deploy.svg">
+					<h2>Deploy</h2>
+					<p>Use modern tools to turn your design into a web site</p>
+					<a href="#">Learn More</a>
+					<br />
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<p>&copy; Broadway 2017</p>
+			</div>
+		</footer>	
+	</body>
+</html>
