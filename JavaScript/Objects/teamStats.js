@@ -58,7 +58,7 @@ team.addPlayer('Jordan', 'Loyd', 25);
 team.addPlayer('Jonas', 'Valanciunas', 26);
 team.addPlayer('Greg', 'Monroe', 28);
 team.addPlayer('Malachi', 'Richardson', 22);
-team.addPlayer('Fred', 'VanVleet', 24);
+team.addPlayer('Fred', 'VanVleet', 24);git 
 team.addPlayer('Norman', 'Powell', 25);
 team.addPlayer('Pascal', 'Siakam', 24);
 team.addPlayer('Delon', 'Wright', 26);
