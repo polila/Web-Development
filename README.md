@@ -10,3 +10,4 @@
 Standard built-in objects</a>
 * StackOverflow: <a href="https://stackoverflow.com/questions/tagged/javascript">Questions tagged [javascript]</a>
 * <a href="https://7chan.org/pr/src/OReilly_JavaScript_The_Good_Parts_May_2008.pdf">JavaScript: The Good Parts</a>
+* <a href="https://google.github.io/styleguide/jsguide.html">Google JavaScript Style Guide</a>
