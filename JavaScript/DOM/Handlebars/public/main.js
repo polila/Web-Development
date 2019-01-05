@@ -63,6 +63,6 @@ const templateSource = templateElement.innerHTML;
 
 const template = Handlebars.compile(templateSource);
 
-compiledHtml = template(context);
+let compiledHtml = template(context);
 
 document.getElementById("information").innerHTML = compiledHtml;

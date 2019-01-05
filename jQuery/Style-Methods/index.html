@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+  	<title>Patrick Olila</title>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="https://static.squarespace.com/universal/default-favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Handlebars.js-->
+    <script src="handlebars.min.js"></script>
+    <script id="templateHB" type="text/x-handlebars-template">
+      {{#each fonts}}
+          <form method="POST">
+            <div class="third">
+              Font Family <select name="font" id="font">
+                {{#each id}}
+                  <option value="{{this}}" id="{{this}}">{{this}}</option>
+                {{/each}}
+              </select>
+            </div>
+            <div class="third">
+              Font Size  
+              <br>
+              <input type="text" placeholder="{{this.size}}" id="size">
+            </div>
+            <div class="third">
+              Font Weight  <select name="weight" id="weight">
+                {{#each weight}}
+                  <option value="{{this}}">{{this}}</option>
+                {{/each}}
+             </select>
+            </div>
+          </form>
+      {{/each}}
+    </script>
+  </head>
+
+  <body>
+
+    <div class="formHolder" id="information">
+    
+    </div>
+
+    <div class = "outer-container">
+
+    <div class="preview">Sample Font</div>
+
+    <textarea name="text" placeholder="Type something here and see what happens..." id="text" cols="30" rows="10"></textarea>
+
+    </div>
+
+  </body>
+
+    <script src="main.js"></script>
+
+    <script src="script.js"></script>
+
+</html>

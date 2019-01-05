@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Patrick Olila</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+		<link rel="shortcut icon" type="image/x-icon" href="https://static.squarespace.com/universal/default-favicon.ico">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!--Handlebars.js-->
+    	<script src="handlebars.min.js"></script>
+		<script id="templateHB" type="text/x-handlebars-template">
+			{{#each questions}}
+			
+				<div class="question">
+					<div class="question-text"><p>{{this.description}}</p></div>
+				</div>
+
+				<div class="hint-box">
+					<div class="hide-hint-text">SHOW/HIDE HINT</div>
+				</div>
+
+				<div class="hint"  style="display: none">
+					<div class="hide-hint-text">
+						<p>{{this.hint}}</p>
+					</div>
+				</div>
+
+				{{#each q}}
+					<div class="wrong-answer answer">
+						<div class="wrong-text answer-text">{{this}}</div>
+					</div>
+				{{/each}}
+
+				<div class="correct-answer answer">
+					<div class="correct-answer-text answer-text">{{this.a}}</div>
+				</div>
+
+				<div class="result">
+					<div class="correct">
+						Correct!
+					</div>
+					<div class="wrong">
+						Incorrect!
+					</div>
+				</div>
+			{{/each}}
+		</script>
+	</head>
+
+	<body>
+
+		<div class="container" id="information">
+
+		</div>
+
+		<script type="text/javascript" src="main.js"></script>
+
+		<script type="text/javascript" src="script.js"></script>
+
+	</body>
+</html>
