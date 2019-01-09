@@ -65,7 +65,9 @@ let randomColor = function() {
 
   img.style.display = "block";
 
-  event.target.style.backgroundColor = x; 
+  event.target.style.backgroundColor = x;
+  
+  document.getElementById("container").style.backgroundColor = 'rgb(' + random(255) + ', ' + random(255) + ', ' + random(255) + ')'; 
 }
 
 clicker.onclick = randomColor;
