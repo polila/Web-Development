@@ -11,4 +11,4 @@ let answer = function(event) {
   q.innerHTML = '<a href="https://en.wikipedia.org/wiki/VIX" style="color: #00A86B" target="_blank">Short the VIX!</a>';
 }
 
-ask.onclick = answer;
+q.onclick = answer;

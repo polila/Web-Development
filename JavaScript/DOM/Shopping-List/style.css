@@ -1,0 +1,15 @@
+.container {
+	text-align: center;
+	display: block;
+}
+
+.list {
+	width: 300px;
+	margin: 0;
+	display: inline-block;
+	text-align: left;
+}
+
+button {
+	margin: 5px;
+}
